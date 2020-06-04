@@ -131,7 +131,7 @@ class A3Cworker(threading.Thread):
         # repeat per episode
         while global_episode_count <= int(self.max_episode_num):
 
-            # init batch
+            # init states, actions, rewards
             states, actions, rewards = [], [], []
             # init episode
             step, episode_reward, done = 0, 0, False
